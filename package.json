@@ -4,17 +4,21 @@
   "private": true,
   "dependencies": {
     "date-fns": "^2.8.0",
+    "global": "^4.4.0",
     "node-sass": "^4.13.0",
     "react": "^16.10.2",
     "react-datepicker": "^2.10.0",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "serve": "^11.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +35,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage" : "http://surajman.github.io/tabs"
+  "homepage": "http://surajman.github.io/tabs",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
