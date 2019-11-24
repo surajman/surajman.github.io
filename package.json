@@ -35,7 +35,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://surajman.github.io/tabs",
+  "homepage": "https://surajman.github.io",
   "devDependencies": {
     "gh-pages": "^2.1.1"
   }
